@@ -1,26 +1,38 @@
-import React from "react"
+import React, { useRef } from "react"
 import "./styles.css"
 
-type Props = {
+interface Props {
     todo: string
     setTodo: React.Dispatch<React.SetStateAction<string>>
+    AddTodo: (e: React.FormEvent) => void
 }
 
-const Inputfield: React.FC<Props> = ({ todo, setTodo }: Props) => {
+const Inputfield: React.FC<Props> = ({ AddTodo, todo, setTodo }) => {
+    const ref = useRef<HTMLInputElement>(null)
+
+    console.log("rerender againt!!!")
+    // demo: use ref
+    function onSend(e: React.FormEvent) {
+        ref.current?.focus()
+        ref.current?.select()
+        const data = ref.current?.value
+        console.log("useref value = ", data)
+        AddTodo(e)
+    }
+
     return (
-        <div>
-            <form className="input">
-                <input
-                    type="text"
-                    placeholder="enter a task"
-                    className="input__box"
-                    onChange={(e) => setTodo(e.target.value)}
-                />
-                <button className="input__submit" type="submit">
-                    Go
-                </button>
-            </form>
-        </div>
+        <form className="input" onSubmit={(e) => onSend(e)}>
+            <input
+                ref={ref}
+                type="text"
+                className="input_box"
+                onChange={(e) => setTodo(e.target.value)}
+                value={todo}
+            />
+            <button type="submit" className="Btn__submit">
+                Go
+            </button>
+        </form>
     )
 }
 
