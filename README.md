@@ -1,3 +1,8 @@
+## preview: [site](https://focused-cray-d27479.netlify.app/)<br>
+<p margin-left: 100px>
+  <img src="https://github.com/anousoneFS/react-task-todo-typescript/blob/search-image/preview.png" width="350" title="hover text">
+</p>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
