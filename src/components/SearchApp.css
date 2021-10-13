@@ -1,0 +1,14 @@
+.Search__app {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.Search__input {
+    width: 70%;
+    border: 1px solid grey;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 10px 10px 20px;
+    /* box-sizing: border-box;  already declare in App.css */
+}

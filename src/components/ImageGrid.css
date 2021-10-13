@@ -1,0 +1,28 @@
+.Image__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    /* background-color: blue; */
+}
+
+.Image__item {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 10px 0px 10px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.Image__item > img {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+
+.Image__item > div {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
