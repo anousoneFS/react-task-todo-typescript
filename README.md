@@ -1,6 +1,6 @@
 
 ### ໃນ Branch: search-image ເປັນການຄົ້ນຫາຮູບພາບ ໂດຍການພິມຊື່ຂອງຮູບນັ້ນ<br>
-## preview: [site](https://focused-cray-d27479.netlify.app/)<br>
+## [Press Preview Link](https://focused-cray-d27479.netlify.app/)<br>
 <p margin-left: 100px>
   <img src="https://github.com/anousoneFS/react-task-todo-typescript/blob/search-image/preview.png" width="350" title="hover text">
 </p>
